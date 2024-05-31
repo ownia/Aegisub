@@ -63,6 +63,9 @@
 #include <ApplicationServices/ApplicationServices.h>
 #endif
 
+// https://developer.apple.com/documentation/objectivec/nsuinteger
+typedef unsigned long NSUInteger;
+
 namespace {
 
 enum class PickerDirection {
