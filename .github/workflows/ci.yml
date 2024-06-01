@@ -45,6 +45,7 @@ jobs:
       - name: Generate macOS installer
         run: |
           meson compile osx-bundle -C build_static
+          codesign --sign - --force --deep build_static/Aegisub.app
           meson compile osx-build-dmg -C build_static
 
       - name: Upload artifacts
