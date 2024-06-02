@@ -29,7 +29,7 @@ jobs:
         run: |
           brew install cmake ninja pkg-config libass boost zlib ffms2 fftw hunspell luarocks pulseaudio ffmpeg boost wxwidgets icu4c luajit
           export LDFLAGS="-L/opt/homebrew/Cellar/icu4c/lib"
-          export CPPFLAGS="-I//opt/homebrew/Cellar/icu4c/include"
+          export CPPFLAGS="-I/opt/homebrew/Cellar/icu4c/include"
           export PKG_CONFIG_PATH="/opt/homebrew/Cellar/cu4c/lib/pkgconfig"
 
       - name: Configure
